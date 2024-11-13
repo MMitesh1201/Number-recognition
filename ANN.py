@@ -13,11 +13,11 @@ def load_idx(filename):
         shape = tuple(struct.unpack('>I', f.read(4))[0] for d in range(dims))
         return np.frombuffer(f.read(), dtype=np.uint8).reshape(shape)
     
-x_train=load_idx('C:/Users/Mitesh/Desktop/jupyter project/Image processing/Perceptron/archive (3)/train-images.idx3-ubyte')
-y_train=load_idx('C:/Users/Mitesh/Desktop/jupyter project/Image processing/Perceptron/archive (3)/train-labels.idx1-ubyte')
+x_train=load_idx('Perceptron/archive (3)/train-images.idx3-ubyte')
+y_train=load_idx('Perceptron/archive (3)/train-labels.idx1-ubyte')
 
-x_test=load_idx('C:/Users/Mitesh/Desktop/jupyter project/Image processing/Perceptron/archive (3)/t10k-images.idx3-ubyte')
-y_test=load_idx('C:/Users/Mitesh/Desktop/jupyter project/Image processing/Perceptron/archive (3)/t10k-labels.idx1-ubyte')
+x_test=load_idx('Perceptron/archive (3)/t10k-images.idx3-ubyte')
+y_test=load_idx('Perceptron/archive (3)/t10k-labels.idx1-ubyte')
 
 def plot_images(images, labels, num_images=5):
     # Create a figure for displaying images
