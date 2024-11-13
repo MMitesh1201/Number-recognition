@@ -1,0 +1,7 @@
+ os
+ pandas 
+ numpy  
+ tensorflow 
+ matplotlib
+ struct
+ cv2
